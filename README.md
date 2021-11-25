@@ -10,3 +10,7 @@
 - Lombok bisa digunakan untuk membuat Getter dan Setter method secara otomatis dengan menggunakan annotation @Getter dan @Setter
 - jika ditempatkan pada field, secara otomatis akan membuat getter atau setter untuk field tersebut
 - jika ditempatkan pada class, semua field yang tidak static akan otomatis dibuatkan getter atau setter nya.
+
+## Access Level
+- Saat menggunakan @Getter dan @Setter, secara default method getter dan setter nya akan dibuat public
+- Jika ingin ubah, bisa ubah visibilty nya menggunakan method value() di @Getter dan @Setter
