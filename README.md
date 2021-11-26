@@ -142,3 +142,8 @@
 - Saat membuat aplikasi, sering sekali membuat log, dan juga otomatis sering sekali membuat field untuk Logger nya.
 - Lombok mendukung pembuatan field log secara otomatis menggunakan annotation log, ada banyak yang didukung oleh Lombok, seperti @Log untuk Java Logging, @Slf4 untuk SLF4J, @CommonsLog untuk apache commons log, @Flogger untuk Google Flogger, @Log4J untuk Log4J, @JbossLog untuk JBoss Log.
 - Secara otomatis Lombok akan membuat field bernama log sesuai dengan logger library yang digunakan.
+
+## Synchronized
+- Java Thread, agar sebuah method aman dari race condition, biasanya menggunakan kata kunci synchronized, atau yang lebih baik adalah menggunakan Lock.
+- Lombok memiliki fitur untuk mempermudah ketika membuat Lock agar method yang dibuat aman dari race condition.
+- Bisa menggunakan annotation @Synchronized, dan jika ingin sharing lock dengan beberapa method, bisa menggunakan value lock yang sama.
