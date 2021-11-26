@@ -81,3 +81,8 @@
 - Jika @NonNull ditempatkan di field, maka secara otomatis juga akan di generate di @RequiredArgsConstructor, sekaligus dilakukan pengecekan tidak boleh null. Selain itu semua setter method nya juga akan dilakukan pengecekan null.
 - Jika @NonNull ditempatkan di parameter, maka parameter tersebut akan dilakukan pengecekan null.
 - jika parameternya null, maka otomatis akan throw NullPointerException.
+              
+## Value
+- Terkadang sering membuat sebuah class yang bersifat immutable(Tidak bisa diubah lagi ketika sudah dibuat)
+- Biasanya yang dilakukannya adalah, menjadikan semua field nya final, tidak membuat setter method dan membuat constructor untuk semua field.
+- Lombok memiliki fitur yang bisa digunakan untuk membuat immutable class, yaitu menggunakan annotation @Value
