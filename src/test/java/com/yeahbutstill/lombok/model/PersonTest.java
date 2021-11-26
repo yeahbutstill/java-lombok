@@ -22,7 +22,7 @@ class PersonTest {
         hobbies.add("Stage Dive");
 
         var person = new Person("id", "name", 28, hobbies);
-        
+
 
     }
 
