@@ -50,3 +50,7 @@
 - Saat membuat equals() dan hashCode() method, Lombok akan selalu menyamakan field mana yang dibandingkan.
 - Secara default, Lombok akan menggunakan semua field yang ada di class tersebut.
 - Jika tidak ingin menggunakan salah satu field, maka bisa menggunakan exclude() method di annotation nya.
+
+## Super Class
+- Secara default, ketika membuat equals() dan hashCode() method, Lombok tidak akan memanggil super class method nya.
+- Jika ingin Lombok memanggil super class method nya, perlu mengubah method callSuper() menjadi true di annotation nya, default nya adalah false.

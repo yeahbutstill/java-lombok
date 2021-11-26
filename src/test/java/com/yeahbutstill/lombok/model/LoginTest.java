@@ -1,6 +1,5 @@
-package com.yeahbutstill.lombok;
+package com.yeahbutstill.lombok.model;
 
-import com.yeahbutstill.lombok.model.Login;
 import lombok.var;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
