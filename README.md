@@ -62,3 +62,10 @@
 ## Override Annotation
 - Jika ingin menubah annotation atau menambahkan annotation setelah menggunakan Data, juga bisa dilakukan.
 - Misal menambah @AllArgsConstructor atau mengubah @ToString
+
+## Builder
+- Saat membuat object yang kompleks, terkadang sedikit menyulitkan jika harus selalu membuat dibuat menggunakan constructor atau menggunakan setter method.
+- Lombok memiliki fitur untuk melakukan auto generate class Builder untuk membuat object yang kompleks.
+- Dengan ini, pembuatan object akan lebih mudah menggunakan class Builder nya.
+- Untuk caranya cukup gunakan @Builder pada class tersebut.
+- Lombok akan secara otomatis membuat static method builder() untuk membuat builder object nya, dan build() untuk membuat object nya.
