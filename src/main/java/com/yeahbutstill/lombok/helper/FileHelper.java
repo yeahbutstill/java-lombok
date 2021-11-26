@@ -1,13 +1,15 @@
 package com.yeahbutstill.lombok.helper;
 
 import lombok.Cleanup;
+import lombok.SneakyThrows;
 
 import java.io.FileReader;
 import java.util.Scanner;
 
 public class FileHelper {
 
-    public static String loadFile(String file) throws Exception {
+    @SneakyThrows
+    public static String loadFile(String file) {
 
         @Cleanup FileReader fileReader = new FileReader(file);
         @Cleanup Scanner scanner = new Scanner(fileReader);

@@ -131,3 +131,9 @@
 - Saat menggunakan object resource di Java yang perlu di close(Seperti misalnya koneksi ke database), biasanya akan
   menggunakan try finally.
 - Lombok memiliki fitur yang bisa digunakan untuk membuat auto generate close resource, yaitu adalah annotation @Cleanup
+
+## Sneaky Throws
+- Secara default saat membuat kode yang memiliki checked exception, diperlukan menangkapnya dalam try-catch.
+- Lombok bisa secara pindah mengubah checked exception menjadi runtime exception tanpa mengubah exception nya itu sendiri.
+- Lombok hanya akan mengakali agar compiler Java tidak komplen ketika program tidak menangkap checked exception.
+- Untuk melakukan itu, bisa menggunakan annotation @SneckyThrows
