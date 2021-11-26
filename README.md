@@ -74,3 +74,10 @@
 - Saat membuat builder, secara default harus menggunakan object yang diperlukan secara langsung, misalnya sebelum ada field List<String>hobbies, makan wajib menggunakan langsung object List nya.
 - Lombok memiliki fitur @Singular, yang bisa digunakan sebagai helper, sehingga tidak perlu langsung membuat List nya.
 - Lombok akan membuat builder method untuk menambahkan data ke Collection(List, Set atau Map) satu per satu.
+
+## Non Null
+- Sebelumnya, saat membuat constructor dengan @RequiredArgsConstructor, Lombok akan menjadi final field. Hal ini membuat field tersebut tidak bisa diubah lagi.
+- Lombok memiliki annotation @NonNull
+- Jika @NonNull ditempatkan di field, maka secara otomatis juga akan di generate di @RequiredArgsConstructor, sekaligus dilakukan pengecekan tidak boleh null. Selain itu semua setter method nya juga akan dilakukan pengecekan null.
+- Jika @NonNull ditempatkan di parameter, maka parameter tersebut akan dilakukan pengecekan null.
+- jika parameternya null, maka otomatis akan throw NullPointerException.
