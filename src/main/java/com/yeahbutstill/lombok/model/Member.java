@@ -12,4 +12,8 @@ public class Member {
     @NonNull
     private String name;
 
+    public String sayHello(@NonNull String name) {
+        return "Hello " + name + ", my name is " + this.name;
+    }
+
 }

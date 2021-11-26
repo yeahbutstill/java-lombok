@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MemberTest {
+class MemberTest {
 
     private static final Logger log = LoggerFactory.getLogger(MemberTest.class);
 
@@ -22,9 +22,20 @@ public class MemberTest {
 
     @Test
     void testSetterNull() {
-        var member = new Member("1", "Dani");
-        member.setId(null);
-        member.setName(null);
-        log.info(String.valueOf(member));
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            var member = new Member("1", "Dani");
+            member.setId(null);
+            member.setName(null);
+            log.info(String.valueOf(member));
+        });
+    }
+
+    @Test
+    void testMethodNull() {
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            var member = new Member("1", "Dani");
+            member.sayHello(null);
+            log.info(String.valueOf(member));
+        });
     }
 }
