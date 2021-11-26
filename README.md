@@ -147,3 +147,8 @@
 - Java Thread, agar sebuah method aman dari race condition, biasanya menggunakan kata kunci synchronized, atau yang lebih baik adalah menggunakan Lock.
 - Lombok memiliki fitur untuk mempermudah ketika membuat Lock agar method yang dibuat aman dari race condition.
 - Bisa menggunakan annotation @Synchronized, dan jika ingin sharing lock dengan beberapa method, bisa menggunakan value lock yang sama.
+
+## Experimental Feature
+- Selain yang sudah dibahas, Lombok juga memiliki banyak sekali fitur yang masih experimental(Masih dalam tahap percopaan)
+- Jika tertarik melihat fitur experimental di Lombok, bisa dilihat diwebsite nya
+  https://projectlombok.org/features/experimental/all
