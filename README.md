@@ -54,3 +54,11 @@
 ## Super Class
 - Secara default, ketika membuat equals() dan hashCode() method, Lombok tidak akan memanggil super class method nya.
 - Jika ingin Lombok memanggil super class method nya, perlu mengubah method callSuper() menjadi true di annotation nya, default nya adalah false.
+            
+## Data
+- Saat nenbuat sebuah class Data/Model/Entity, terkadang sering menggunakan annotation @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode
+- Lombok memiliki annotation khusus untuk mepersingkatnya, yaitu dengan menggunakan @Data
+
+## Override Annotation
+- Jika ingin menubah annotation atau menambahkan annotation setelah menggunakan Data, juga bisa dilakukan.
+- Misal menambah @AllArgsConstructor atau mengubah @ToString
