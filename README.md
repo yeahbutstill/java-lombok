@@ -35,3 +35,8 @@
 - Lombok juga bisa digunakan untuk membuat method toString() secara otomatis.
 - Menggunakan annotation @ToString di class.
 - Secara otomatis akan membuat method toString() yang bersifat informasi semua field yang ada di class tersebut.
+
+## Exclude Field Name
+- Terkadang saat membuar method toString() tidak ingin menampilkan semua field.
+- Terkadang ada beberapa field yang sensitive sehingga tidak ingin menampilkannya ke dalam method toString().
+- Untuk melakukan itu, bisa menggunakan method exclude() di annotation @ToString

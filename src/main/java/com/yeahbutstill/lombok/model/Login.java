@@ -5,7 +5,9 @@ import lombok.*;
 @Getter
 @AllArgsConstructor(staticName = "create")
 @NoArgsConstructor(staticName = "createEmpty")
-@ToString
+@ToString(exclude = {
+        "password"
+})
 public class Login {
 
     @Setter(value = AccessLevel.PROTECTED)
