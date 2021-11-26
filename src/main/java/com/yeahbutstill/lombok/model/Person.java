@@ -1,9 +1,6 @@
 package com.yeahbutstill.lombok.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -19,6 +16,7 @@ public class Person {
 
     private Integer age;
 
+    @Singular
     private List<String> hobbies;
 
 }

@@ -2,10 +2,14 @@ package com.yeahbutstill.lombok.model;
 
 import lombok.var;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 
-public class PersonTest {
+class PersonTest {
+
+    private static final Logger log = LoggerFactory.getLogger(PersonTest.class);
 
     @Test
     void testCreateViaConstructor() {
@@ -43,6 +47,7 @@ public class PersonTest {
     @Test
     void testCreateViaBuilder() {
 
+        // Manual Collection
         var hobbies = new ArrayList<String>();
         hobbies.add("Geme");
         hobbies.add("Berenang");
@@ -54,8 +59,25 @@ public class PersonTest {
                 .id("id")
                 .name("name")
                 .age(28)
+                // Jamak
                 .hobbies(hobbies)
                 .build();
 
     }
+
+    @Test
+    void testCreateViaBuilderWithSingular() {
+
+        var person = Person.builder()
+                .id("id")
+                .name("name")
+                .age(28)
+                .hobby("Game")
+                .hobby("Stage Dive")
+                .hobby("Ngoding")
+                .build();
+
+        log.info(String.valueOf(person));
+    }
+
 }

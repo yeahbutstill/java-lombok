@@ -69,3 +69,8 @@
 - Dengan ini, pembuatan object akan lebih mudah menggunakan class Builder nya.
 - Untuk caranya cukup gunakan @Builder pada class tersebut.
 - Lombok akan secara otomatis membuat static method builder() untuk membuat builder object nya, dan build() untuk membuat object nya.
+
+## Singular
+- Saat membuat builder, secara default harus menggunakan object yang diperlukan secara langsung, misalnya sebelum ada field List<String>hobbies, makan wajib menggunakan langsung object List nya.
+- Lombok memiliki fitur @Singular, yang bisa digunakan sebagai helper, sehingga tidak perlu langsung membuat List nya.
+- Lombok akan membuat builder method untuk menambahkan data ke Collection(List, Set atau Map) satu per satu.
