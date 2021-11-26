@@ -40,3 +40,13 @@
 - Terkadang saat membuar method toString() tidak ingin menampilkan semua field.
 - Terkadang ada beberapa field yang sensitive sehingga tidak ingin menampilkannya ke dalam method toString().
 - Untuk melakukan itu, bisa menggunakan method exclude() di annotation @ToString
+
+## Equals dan HashCode
+- Lombok juga bisa digunakan untuk membuat method equals dan hashCode secara otomatis.
+- Kedua method ini akan selalu diimplementasikan berbarengan.
+- Untuk membuat Equals dan HashCode secara otomatis, bisa menggunakan annotation @EqualsAndHashCode
+
+## Exclude Field
+- Saat membuat equals() dan hashCode() method, Lombok akan selalu menyamakan field mana yang dibandingkan.
+- Secara default, Lombok akan menggunakan semua field yang ada di class tersebut.
+- Jika tidak ingin menggunakan salah satu field, maka bisa menggunakan exclude() method di annotation nya.
