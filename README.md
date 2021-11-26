@@ -14,3 +14,13 @@
 ## Access Level
 - Saat menggunakan @Getter dan @Setter, secara default method getter dan setter nya akan dibuat public
 - Jika ingin ubah, bisa ubah visibilty nya menggunakan method value() di @Getter dan @Setter
+ 
+## Constructor
+- Lombok juga bisa digunakan untuk membuat constructor secara otomatis.
+- @NoArgsConstructor digunakan untuk membuar constructor tanpa parameter
+- AllArgsConstructor digunakan untuk membuar constructor dengan semua parameter yang diambil dari field nya, urutanya sesuai dengan urutan field nya.
+
+## Static Method
+- Sebagian Class terkadang ada yang menggunakan static method untuk membuat object, contohnya Calender, biasanya digunakan Calender.getInstance()
+- Lombok juga bisa digunakan untuk membuar object dengan static object, bisa gunakan annotation yang sama, namun bisa tambahkan method() statiacName pada annotation nya.
+- Secara otomatis constructor akan menjadi private, sehingga dipaksa untuk menggunakan static method ketika membuat object nya.

@@ -1,10 +1,10 @@
 package com.yeahbutstill.lombok;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
+@AllArgsConstructor(staticName = "create")
+@NoArgsConstructor(staticName = "createEmpty")
 public class Login {
 
     @Setter(value = AccessLevel.PROTECTED)
