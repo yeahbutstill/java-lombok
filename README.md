@@ -30,3 +30,8 @@
 - Terkadang hanya ingin membuat constructor untuk parameter yang wajib saja.
 - Pada kasus ini, menggunakan @RequiredArgsConstructor
 - Secara otomatis Lombok hanya akan membuat constructor dengan parameter untuk field yang final.
+
+## ToString
+- Lombok juga bisa digunakan untuk membuat method toString() secara otomatis.
+- Menggunakan annotation @ToString di class.
+- Secara otomatis akan membuat method toString() yang bersifat informasi semua field yang ada di class tersebut.

@@ -28,4 +28,12 @@ class LoginTest {
 
     }
 
+
+    @Test
+    void testToString() {
+
+        var login = Login.create("dani", "sangatrahasia");
+        log.info(login.toString());
+
+    }
 }
