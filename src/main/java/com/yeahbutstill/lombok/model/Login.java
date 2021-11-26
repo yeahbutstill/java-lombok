@@ -1,4 +1,4 @@
-package com.yeahbutstill.lombok;
+package com.yeahbutstill.lombok.model;
 
 import lombok.*;
 

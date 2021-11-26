@@ -24,3 +24,9 @@
 - Sebagian Class terkadang ada yang menggunakan static method untuk membuat object, contohnya Calender, biasanya digunakan Calender.getInstance()
 - Lombok juga bisa digunakan untuk membuar object dengan static object, bisa gunakan annotation yang sama, namun bisa tambahkan method() statiacName pada annotation nya.
 - Secara otomatis constructor akan menjadi private, sehingga dipaksa untuk menggunakan static method ketika membuat object nya.
+      
+## Required Args Constructor
+- Saat menggunakan @NoArgsConstructor maka akan dibuatkan constructor tanpa parameter, jika menggunakan @AllArgsConstructor maka akan dibuatkan constructor untuk semua parameter.
+- Terkadang hanya ingin membuat constructor untuk parameter yang wajib saja.
+- Pada kasus ini, menggunakan @RequiredArgsConstructor
+- Secara otomatis Lombok hanya akan membuat constructor dengan parameter untuk field yang final.
