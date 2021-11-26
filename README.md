@@ -137,3 +137,8 @@
 - Lombok bisa secara pindah mengubah checked exception menjadi runtime exception tanpa mengubah exception nya itu sendiri.
 - Lombok hanya akan mengakali agar compiler Java tidak komplen ketika program tidak menangkap checked exception.
 - Untuk melakukan itu, bisa menggunakan annotation @SneckyThrows
+
+## Log
+- Saat membuat aplikasi, sering sekali membuat log, dan juga otomatis sering sekali membuat field untuk Logger nya.
+- Lombok mendukung pembuatan field log secara otomatis menggunakan annotation log, ada banyak yang didukung oleh Lombok, seperti @Log untuk Java Logging, @Slf4 untuk SLF4J, @CommonsLog untuk apache commons log, @Flogger untuk Google Flogger, @Log4J untuk Log4J, @JbossLog untuk JBoss Log.
+- Secara otomatis Lombok akan membuat field bernama log sesuai dengan logger library yang digunakan.
