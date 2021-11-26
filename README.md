@@ -86,3 +86,8 @@
 - Terkadang sering membuat sebuah class yang bersifat immutable(Tidak bisa diubah lagi ketika sudah dibuat)
 - Biasanya yang dilakukannya adalah, menjadikan semua field nya final, tidak membuat setter method dan membuat constructor untuk semua field.
 - Lombok memiliki fitur yang bisa digunakan untuk membuat immutable class, yaitu menggunakan annotation @Value
+
+## With 
+- Lombok memiliki fitur untuk membuat class baru dengan memodifikasi salah satu field yang sudah ada dengan menggunakan annotation @With
+- Jika ditempatkan di field, maka secara otomatis akan membuat method dengan nama withXxx
+- Jika ditempatkan di class, maka secara otomatis akan membuat method withXxx untuk semua field.
